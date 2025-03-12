@@ -10,10 +10,9 @@ count = 0
 
 while True:
     count += 1
-    next = new[-1] + str(int(new[0]) + int(new[1]))[-1]
+    next = new[-1] + str((int(new[0]) + int(new[1])) % 10)
     if original == next:
         break
-    else:
-        new = next
+    new = next
 
 print(count)

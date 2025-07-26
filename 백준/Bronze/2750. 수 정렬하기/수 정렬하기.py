@@ -1,8 +1,5 @@
 n = int(input())
-l = []
-
-for _ in range(n):
-    l.append(int(input()))
+l = [int(input()) for _ in range(n)]
 
 l.sort()
 

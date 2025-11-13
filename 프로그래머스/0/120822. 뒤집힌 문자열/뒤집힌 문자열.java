@@ -1,0 +1,13 @@
+import java.util.*;
+
+class Solution {
+    public String solution(String my_string) {
+        String[] arr = my_string.split("");
+        String answer = "";
+        
+        for(int i = (arr.length-1); i > -1; i--) {
+            answer += arr[i];
+        }
+        return answer;
+    }
+}
